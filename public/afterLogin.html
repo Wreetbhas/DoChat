@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+            integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>DoChat</title>
+    </head>
+    <body>
+        <button class="btn" id = 'leave'>Logout</button>
+        <div id = "profile"></div>
+        <h2>Users</h2>
+        <div class = "list"><ul id = "usersList"></ul></div>
+        <div class = "chatMessages" id ="chats"></div><br>
+        <div class = "msgSend">
+            <textarea id="msg" placeholder="Enter Message" rows = "10" cols = "100"></textarea>
+            <br><br>
+            <button class="btn" id = 'nxt'>Next</button>
+            <div class = 'Select-Send' id = selectSend></div>
+        </div>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+            integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+            crossorigin="anonymous"
+        ></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
