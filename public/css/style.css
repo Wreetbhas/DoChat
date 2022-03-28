@@ -1,0 +1,17 @@
+#profile{
+    margin-left:750px;
+}
+.list{
+    float:left; 
+}
+.chatMessages{
+    float:right;
+}
+.msgSend{
+    clear:both;
+}
+
+#msg{
+    height:50px;
+    width:150px;
+}
